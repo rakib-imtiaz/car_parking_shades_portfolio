@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Parking Shades Kuwait</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#FFF0DC',
+                        sand: '#F0BB78',
+                        brown: '#543A14',
+                        dark: '#131010',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-cream">
+    <!-- Header with Mobile Menu -->
+    <header class="fixed w-full top-0 z-50 bg-cream/95 backdrop-blur-sm">
+        <nav class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <div class="flex items-center gap-4">
+                    <img src="./images/logo.png" alt="Logo" class="h-8 md:h-10">
+                    <span class="text-brown text-lg md:text-xl font-bold">Car Parking Shades</span>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center gap-6">
+                    <a href="#home" class="text-brown hover:text-sand transition-colors">Home</a>
+                    <a href="#products" class="text-brown hover:text-sand transition-colors">Products</a>
+                    <a href="#gallery" class="text-brown hover:text-sand transition-colors">Gallery</a>
+                    <a href="#about" class="text-brown hover:text-sand transition-colors">About</a>
+                    <a href="#contact"
+                        class="bg-brown text-cream px-6 py-2 rounded-lg hover:bg-sand hover:text-brown transition-all">Contact
+                        Us</a>
+                    <button
+                        class="bg-sand text-brown px-4 py-2 rounded-lg hover:bg-brown hover:text-cream transition-all">عربي</button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-brown p-2" id="mobile-menu-button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu Panel -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-4 space-y-3">
+                    <a href="#home" class="block text-brown hover:text-sand transition-colors py-2">Home</a>
+                    <a href="#products" class="block text-brown hover:text-sand transition-colors py-2">Products</a>
+                    <a href="#gallery" class="block text-brown hover:text-sand transition-colors py-2">Gallery</a>
+                    <a href="#about" class="block text-brown hover:text-sand transition-colors py-2">About</a>
+                    <a href="#contact"
+                        class="block bg-brown text-cream px-4 py-2 rounded-lg hover:bg-sand hover:text-brown transition-all">Contact
+                        Us</a>
+                    <button
+                        class="w-full mt-2 bg-sand text-brown px-4 py-2 rounded-lg hover:bg-brown hover:text-cream transition-all">عربي</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen pt-16 bg-[url('hero-image.jpg')] bg-cover bg-center">
+        <div class="absolute inset-0 bg-gradient-to-b from-dark/70 to-brown/80"></div>
+        <div class="relative z-10 container mx-auto px-4 h-full flex flex-col justify-center items-center text-center">
+            <h1 class="text-cream text-5xl md:text-6xl font-bold mb-6">Premium Car Parking Solutions</h1>
+            <p class="text-cream/90 text-xl mb-8">Kuwait's Leading Shade Manufacturer</p>
+            <div class="flex flex-col md:flex-row gap-4">
+                <button
+                    class="bg-sand text-brown px-8 py-3 rounded-lg font-semibold hover:bg-brown hover:text-cream transition-all transform hover:-translate-y-1">
+                    Get Free Quote
+                </button>
+                <button
+                    class="bg-transparent border-2 border-sand text-cream px-8 py-3 rounded-lg font-semibold hover:bg-sand hover:text-brown transition-all transform hover:-translate-y-1">
+                    View Projects
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Strip -->
+    <div class="container mx-auto px-4 -mt-16 relative z-20">
+        <div class="bg-white rounded-xl shadow-xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-8">
+            <div class="flex items-center gap-4">
+                <i class="fas fa-shield-alt text-2xl text-sand"></i>
+                <span class="text-brown font-medium">UV Protection</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <i class="fas fa-certificate text-2xl text-sand"></i>
+                <span class="text-brown font-medium">Quality Materials</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <i class="fas fa-clock text-2xl text-sand"></i>
+                <span class="text-brown font-medium">10+ Years Experience</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <i class="fas fa-tools text-2xl text-sand"></i>
+                <span class="text-brown font-medium">Professional Installation</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-cream">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="text-sand font-semibold">Our Services</span>
+                <h2 class="text-4xl font-bold text-brown mb-4">Complete Shade Solutions</h2>
+                <p class="text-brown/70 max-w-2xl mx-auto">We provide comprehensive shading solutions for residential,
+                    commercial, and industrial properties across Kuwait.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Car Park Shades -->
+                <div
+                    class="bg-white rounded-xl shadow-lg overflow-hidden group hover:-translate-y-2 transition-all duration-300">
+                    <div class="relative">
+                        <div
+                            class="absolute top-4 right-4 bg-sand text-brown px-4 py-1 rounded-full text-sm font-semibold">
+                            Most Popular
+                        </div>
+                        <img src="https://iipg-kw.com/wp-content/uploads/2023/05/Polycarbonate-Parking-Shade.jpg"
+                            alt="Car Park Shades"
+                            class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-brown mb-3">Car Park Shades</h3>
+                        <p class="text-brown/70 mb-4">Premium shading solutions designed to protect vehicles from harsh
+                            weather conditions.</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center gap-2">
+                                <i class="fas fa-check text-sand"></i>
+                                <span class="text-brown/80">Up to 98% UV Protection</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fas fa-check text-sand"></i>
+                                <span class="text-brown/80">Temperature Reduction</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fas fa-check text-sand"></i>
+                                <span class="text-brown/80">Customizable Designs</span>
+                            </li>
+                        </ul>
+                        <button
+                            class="w-full bg-sand text-brown py-2 rounded-lg font-semibold hover:bg-brown hover:text-cream transition-all">
+                            Get Quote
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Pergola Shades -->
+                <div
+                    class="bg-white rounded-xl shadow-lg overflow-hidden group hover:-translate-y-2 transition-all duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800"
+                            alt="Pergola Shades"
+                            class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-brown mb-3">Pergola Shades</h3>
+                        <p class="text-brown/70 mb-4">Elegant outdoor living solutions for your garden or patio area.
+                        </p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center gap-2">
+                                <i class="fas fa-check text-sand"></i>
+                                <span class="text-brown/80">Modern Designs</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fas fa-check text-sand"></i>
+                                <span class="text-brown/80">Weather Resistant</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fas fa-check text-sand"></i>
+                                <span class="text-brown/80">Custom Sizes Available</span>
+                            </li>
+                        </ul>
+                        <button
+                            class="w-full bg-sand text-brown py-2 rounded-lg font-semibold hover:bg-brown hover:text-cream transition-all">
+                            Get Quote
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Sun Shades -->
+                <div
+                    class="bg-white rounded-xl shadow-lg overflow-hidden group hover:-translate-y-2 transition-all duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800" alt="Sun Shades"
+                            class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-brown mb-3">Sun Shades</h3>
+                        <p class="text-brown/70 mb-4">Versatile shading solutions for any outdoor space.</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center gap-2">
+                                <i class="fas fa-check text-sand"></i>
+                                <span class="text-brown/80">High-Grade Materials</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fas fa-check text-sand"></i>
+                                <span class="text-brown/80">Easy Maintenance</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fas fa-check text-sand"></i>
+                                <span class="text-brown/80">Professional Installation</span>
+                            </li>
+                        </ul>
+                        <button
+                            class="w-full bg-sand text-brown py-2 rounded-lg font-semibold hover:bg-brown hover:text-cream transition-all">
+                            Get Quote
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="py-20 bg-gradient-to-br from-brown to-sand text-cream">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="p-6">
+                    <div class="text-4xl font-bold mb-2">500+</div>
+                    <div class="text-cream/80">Projects Completed</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold mb-2">98%</div>
+                    <div class="text-cream/80">Satisfied Clients</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold mb-2">10+</div>
+                    <div class="text-cream/80">Years Experience</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold mb-2">24/7</div>
+                    <div class="text-cream/80">Support Available</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="text-sand font-semibold">Testimonials</span>
+                <h2 class="text-4xl font-bold text-brown mb-4">What Our Clients Say</h2>
+                <p class="text-brown/70 max-w-2xl mx-auto">Read what our satisfied customers have to say about our
+                    services.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-cream p-6 rounded-xl shadow-lg">
+                    <div class="flex gap-4 mb-4">
+                        <div
+                            class="w-12 h-12 bg-sand rounded-full flex items-center justify-center text-brown font-bold">
+                            AK
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-brown">Ahmed Kuwait</h4>
+                            <p class="text-brown/70">Residential Client</p>
+                        </div>
+                    </div>
+                    <p class="text-brown/80 mb-4">"Excellent service and quality installation. The team was professional
+                        and completed the work on time. The car park shade has made a significant difference in
+                        protecting our vehicles."</p>
+                    <div class="flex text-sand">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-cream p-6 rounded-xl shadow-lg">
+                    <div class="flex gap-4 mb-4">
+                        <div
+                            class="w-12 h-12 bg-sand rounded-full flex items-center justify-center text-brown font-bold">
+                            MS
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-brown">Mohammed Salmiya</h4>
+                            <p class="text-brown/70">Commercial Property Owner</p>
+                        </div>
+                    </div>
+                    <p class="text-brown/80 mb-4">"We needed a large-scale parking solution for our commercial complex.
+                        Their team provided excellent consultation and delivered a perfect solution. Highly
+                        recommended!"</p>
+                    <div class="flex text-sand">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-cream p-6 rounded-xl shadow-lg">
+                    <div class="flex gap-4 mb-4">
+                        <div
+                            class="w-12 h-12 bg-sand rounded-full flex items-center justify-center text-brown font-bold">
+                            FK
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-brown">Fatima Kuwait</h4>
+                            <p class="text-brown/70">Villa Owner</p>
+                        </div>
+                    </div>
+                    <p class="text-brown/80 mb-4">"The pergola they installed in our garden is beautiful and provides
+                        perfect shade. The quality of materials and workmanship is outstanding. Thank you!"</p>
+                    <div class="flex text-sand">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Process Section -->
+    <section class="py-20 bg-cream">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="text-sand font-semibold">How We Work</span>
+                <h2 class="text-4xl font-bold text-brown mb-4">Our Installation Process</h2>
+                <p class="text-brown/70 max-w-2xl mx-auto">We follow a systematic approach to ensure perfect
+                    installation and customer satisfaction.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Step 1: Initial Consultation -->
+                <div class="relative">
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <div
+                            class="w-12 h-12 bg-sand text-brown rounded-full flex items-center justify-center text-xl font-bold mb-4">
+                            1</div>
+                        <h3 class="text-xl font-semibold text-brown mb-2">Initial Consultation</h3>
+                        <p class="text-brown/70">Free site visit and detailed discussion of your requirements and
+                            preferences.</p>
+                    </div>
+                    <div class="hidden lg:block absolute top-1/2 left-full w-8 border-t-2 border-dashed border-sand">
+                    </div>
+                </div>
+
+                <!-- Step 2: Design & Planning -->
+                <div class="relative">
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <div
+                            class="w-12 h-12 bg-sand text-brown rounded-full flex items-center justify-center text-xl font-bold mb-4">
+                            2</div>
+                        <h3 class="text-xl font-semibold text-brown mb-2">Design & Planning</h3>
+                        <p class="text-brown/70">Custom design creation, material selection, and detailed project
+                            planning.</p>
+                    </div>
+                    <div class="hidden lg:block absolute top-1/2 left-full w-8 border-t-2 border-dashed border-sand">
+                    </div>
+                </div>
+
+                <!-- Step 3: Installation -->
+                <div class="relative">
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <div
+                            class="w-12 h-12 bg-sand text-brown rounded-full flex items-center justify-center text-xl font-bold mb-4">
+                            3</div>
+                        <h3 class="text-xl font-semibold text-brown mb-2">Installation</h3>
+                        <p class="text-brown/70">Professional installation by our experienced team with minimal
+                            disruption.</p>
+                    </div>
+                    <div class="hidden lg:block absolute top-1/2 left-full w-8 border-t-2 border-dashed border-sand">
+                    </div>
+                </div>
+
+                <!-- Step 4: Quality Check -->
+                <div class="relative">
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <div
+                            class="w-12 h-12 bg-sand text-brown rounded-full flex items-center justify-center text-xl font-bold mb-4">
+                            4</div>
+                        <h3 class="text-xl font-semibold text-brown mb-2">Final Inspection</h3>
+                        <p class="text-brown/70">Thorough quality check and client walkthrough to ensure complete
+                            satisfaction.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-cream">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="text-sand font-semibold">FAQ</span>
+                <h2 class="text-4xl font-bold text-brown mb-4">Frequently Asked Questions</h2>
+                <p class="text-brown/70 max-w-2xl mx-auto">Find answers to common questions about our services.</p>
+            </div>
+
+            <div class="max-w-3xl mx-auto space-y-4">
+                <div class="bg-white rounded-lg shadow-md">
+                    <button
+                        class="w-full px-6 py-4 text-left text-brown font-semibold flex justify-between items-center">
+                        <span>How long does installation take?</span>
+                        <i class="fas fa-plus text-sand"></i>
+                    </button>
+                    <div class="px-6 pb-4 text-brown/70 hidden">
+                        Installation time varies depending on the project size, typically ranging from 2-5 days for
+                        standard installations.
+                    </div>
+                </div>
+
+                <!-- Add more FAQ items -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-br from-brown to-sand">
+        <div class="container mx-auto px-4">
+            <div class="bg-white rounded-xl shadow-xl overflow-hidden">
+                <div class="grid md:grid-cols-2 gap-0">
+                    <div class="bg-gradient-to-br from-brown to-sand p-8 text-cream">
+                        <h2 class="text-3xl font-bold mb-6">Get In Touch</h2>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-4">
+                                <i class="fas fa-phone text-2xl"></i>
+                                <div>
+                                    <h4 class="font-semibold">Call Us</h4>
+                                    <p>97237343</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <i class="fas fa-envelope text-2xl"></i>
+                                <div>
+                                    <h4 class="font-semibold">Email Us</h4>
+                                    <p>sanatSohel55@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <i class="fas fa-map-marker-alt text-2xl"></i>
+                                <div>
+                                    <h4 class="font-semibold">Location</h4>
+                                    <p>Kuwait</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-8">
+                        <form class="space-y-4">
+                            <input type="text" placeholder="Your Name"
+                                class="w-full px-4 py-2 rounded-lg border border-gray-200 focus:border-sand focus:ring-2 focus:ring-sand/20 outline-none">
+                            <input type="email" placeholder="Your Email"
+                                class="w-full px-4 py-2 rounded-lg border border-gray-200 focus:border-sand focus:ring-2 focus:ring-sand/20 outline-none">
+                            <textarea rows="4" placeholder="Your Message"
+                                class="w-full px-4 py-2 rounded-lg border border-gray-200 focus:border-sand focus:ring-2 focus:ring-sand/20 outline-none"></textarea>
+                            <button
+                                class="w-full bg-brown text-cream py-3 rounded-lg font-semibold hover:bg-sand hover:text-brown transition-all">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-cream">
+        <div class="container mx-auto px-4">
+            <!-- Section Header -->
+            <div class="text-center mb-12">
+                <span class="text-sand font-semibold">Our Portfolio</span>
+                <h2 class="text-4xl font-bold text-brown mb-4">Featured Projects</h2>
+                <p class="text-brown/70 mb-8">Explore our completed shade solutions across Kuwait</p>
+
+                <!-- Filter Buttons -->
+                <div class="flex flex-wrap justify-center gap-4 mb-12">
+                    <button
+                        class="px-6 py-2 rounded-full bg-brown text-cream hover:bg-sand hover:text-brown transition-all">
+                        All Projects
+                    </button>
+                    <button
+                        class="px-6 py-2 rounded-full bg-white text-brown hover:bg-sand hover:text-brown transition-all">
+                        Car Parks
+                    </button>
+                    <button
+                        class="px-6 py-2 rounded-full bg-white text-brown hover:bg-sand hover:text-brown transition-all">
+                        Pergolas
+                    </button>
+                    <button
+                        class="px-6 py-2 rounded-full bg-white text-brown hover:bg-sand hover:text-brown transition-all">
+                        Sun Shades
+                    </button>
+                </div>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+                <!-- Project 1 -->
+                <div class="group relative overflow-hidden rounded-xl bg-white shadow-lg">
+                    <div class="relative h-48 sm:h-56 md:h-64 lg:h-72 overflow-hidden">
+                        <img src="./images/projects/project1.png" alt="Glass Enclosure Project"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="group relative overflow-hidden rounded-xl bg-white shadow-lg">
+                    <div class="relative h-48 sm:h-56 md:h-64 lg:h-72 overflow-hidden">
+                        <img src="./images/projects/project2.png" alt="Interior Glass Project"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="group relative overflow-hidden rounded-xl bg-white shadow-lg">
+                    <div class="relative h-48 sm:h-56 md:h-64 lg:h-72 overflow-hidden">
+                        <img src="./images/projects/project3.png" alt="Night View Project"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="group relative overflow-hidden rounded-xl bg-white shadow-lg">
+                    <div class="relative h-48 sm:h-56 md:h-64 lg:h-72 overflow-hidden">
+                        <img src="./images/projects/project4.png" alt="Modern Structure Project"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="group relative overflow-hidden rounded-xl bg-white shadow-lg">
+                    <div class="relative h-48 sm:h-56 md:h-64 lg:h-72 overflow-hidden">
+                        <img src="./images/projects/project5.png" alt="Glass Design Project"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="group relative overflow-hidden rounded-xl bg-white shadow-lg">
+                    <div class="relative h-48 sm:h-56 md:h-64 lg:h-72 overflow-hidden">
+                        <img src="./images/projects/project6.png" alt="Glass Design Project"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="group relative overflow-hidden rounded-xl bg-white shadow-lg">
+                    <div class="relative h-48 sm:h-56 md:h-64 lg:h-72 overflow-hidden">
+                        <img src="./images/projects/project7.png" alt="Glass Design Project"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8 -->
+                <div class="group relative overflow-hidden rounded-xl bg-white shadow-lg">
+                    <div class="relative h-48 sm:h-56 md:h-64 lg:h-72 overflow-hidden">
+                        <img src="./images/projects/project8.png" alt="Glass Design Project"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View More Button -->
+            <div class="text-center mt-12">
+                <button
+                    class="px-8 py-3 bg-brown text-cream rounded-lg hover:bg-sand hover:text-brown transition-all transform hover:-translate-y-1">
+                    View All Projects
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brown text-cream py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">About Us</h3>
+                    <p class="text-cream/80">Kuwait's leading manufacturer of premium car parking shades and outdoor
+                        solutions.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-cream/80 hover:text-sand">Home</a></li>
+                        <li><a href="#" class="text-cream/80 hover:text-sand">Services</a></li>
+                        <li><a href="#" class="text-cream/80 hover:text-sand">Gallery</a></li>
+                        <li><a href="#" class="text-cream/80 hover:text-sand">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contact Info</h3>
+                    <ul class="space-y-2 text-cream/80">
+                        <li>Phone: 97237343</li>
+                        <li>Email: sanatSohel55@gmail.com</li>
+                        <li>Location: Kuwait</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-cream/20 mt-8 pt-8 text-center">
+                <p class="text-cream/60">&copy; 2024 Car Parking Shades Kuwait. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Add this script at the end of your body tag -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            // Change hamburger to X when menu is open
+            const isOpen = !mobileMenu.classList.contains('hidden');
+            mobileMenuButton.innerHTML = isOpen
+                ? `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                   </svg>`
+                : `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                   </svg>`;
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.contains(e.target) && !mobileMenuButton.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+                mobileMenuButton.innerHTML = `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                   </svg>`;
+            }
+        });
+    </script>
+
+    <!-- Enhanced Mobile-First Responsive Classes -->
+    <style>
+        /* Custom responsive classes */
+        @media (max-width: 640px) {
+            .container {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+
+            .grid {
+                gap: 1rem;
+            }
+
+            .text-4xl {
+                font-size: 2rem;
+            }
+
+            .py-20 {
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+            }
+
+            .mb-16 {
+                margin-bottom: 2rem;
+            }
+
+            .gap-8 {
+                gap: 1rem;
+            }
+        }
+    </style>
+</body>
+
+</html>
